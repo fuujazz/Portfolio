@@ -1,65 +1,70 @@
 .experience__container {
-    display: grid;
+	display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-    position: relative;
-}
-
-.experience__frontend {
-   grid-column: 1/3;
-   grid-row: 1/2;
-}
-
-.experience__backend {
-   grid-column: 3/ grid-column-end;
-}
-
-.experience__others {
-  grid-column: 2/4;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 2rem;
+	position: relative;
 }
 
 .experience__container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+	background: var(--color-bg-variant);
+	padding: 2.4rem 5rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	transition: var(--transition);
 }
 
 .experience__container > div:hover {
-    background: transparent;
-    border-color: var(--color-secondary);
-    cursor: default;
+	background: transparent;
+	border-color: var(--color-secondary);
+	cursor: default;
 }
 
 .experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--color-primary);
 }
 
+.experience__soft > .experience__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 3rem;
+	column-gap: 2rem;
+}
 
 .experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
-    column-gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 1rem;
+	column-gap: 2rem;
 }
 
-.experience__details { 
-    display: flex;
-    gap: 1rem;
-
+.experience__details {
+	display: flex;
+	gap: 1rem;
 }
 
 .experience__details-icons {
-    margin-top: 6px;
-    color: var(--color-primary);
+	margin-top: 6px;
+	color: var(--color-primary);
 }
-
 
 /* TODO: */
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 1024) {
+	.experience__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.experience__container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}

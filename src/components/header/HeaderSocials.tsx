@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
 const HeaderSocials = () => {
 	return (
@@ -9,8 +9,11 @@ const HeaderSocials = () => {
 			>
 				<BsLinkedin size="36px" />
 			</a>
-			<a href="https://github.com/fuujazz">
+			<a href="https://github.com/fuujazz" target="_blank">
 				<BsGithub size="36px" />
+			</a>
+			<a href="https://twitter.com/fuufumee" target="_blank">
+				<BsTwitter size="36px" />
 			</a>
 		</div>
 	);

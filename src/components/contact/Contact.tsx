@@ -51,16 +51,16 @@ const Contact = () => {
 							Send A Message
 						</a>
 					</article>
-					{/*
-					<article className="contact__option">
+
+					{/* <article className="contact__option">
 						<BsWhatsapp className="contact__option-icon" />
-						<h4>Whatsapp</h4>
-						<h5>+90 553 645 91 92</h5>
+						<h4>Twitter</h4>
+
 						<a
-							href="https://api.whatsapp.com/send?phone=+905536459192"
+							href="https://twitter.com/messages/compose?recipient_id=3805104374"
 							target="_blank"
 						>
-							Send A Message
+							https://twitter.com/fuufumee
 						</a>
 					</article> */}
 				</div>

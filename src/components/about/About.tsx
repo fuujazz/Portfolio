@@ -7,37 +7,21 @@ import { ReactComponent as ArrowIcon } from "../../assets/arrow1.svg";
 import { useEffect, useState } from "react";
 
 const About = () => {
-	const [color, setColor] = useState("#fff");
-	const colors = ["#ad6daa", "#1f2559", "#FFFFF0", "#ad6daa"];
-
-	useEffect(() => {
-		setInterval(() => {
-			getRandomColor();
-		}, 500);
-	}, []);
-
-	const getRandomColor = () => {
-		colors.forEach((item) => {
-			setColor(item);
-		});
-	};
-
 	return (
 		<section id="about">
-			<div id="about__title">
-				<h5>Get To Know</h5>
-				<h2>About me</h2>
-			</div>
-
 			<div className="container about__container">
 				<div className="about__me">
 					<img src={ME} alt="" className="about__me-image" />
 					<div className="arrow_container">
-						<ArrowIcon fill={color} stroke="black" className="arrow_icon" />
+						<ArrowIcon fill="#ad6daa" stroke="black" className="arrow_icon" />
 					</div>
 				</div>
 
 				<div className="about__content">
+					<div id="about__title">
+						<h5>Get To Know</h5>
+						<h2>About me</h2>
+					</div>
 					<div className="about__cards">
 						<article className="about__card">
 							<FaAward className="about__icon" />
@@ -64,7 +48,7 @@ const About = () => {
 						myself who can learn and adapt fast.
 					</p>
 					<div
-						style={{ width: "20rem", display: "flex", justifyContent: "end" }}
+						style={{ width: "27rem", display: "flex", justifyContent: "end" }}
 					>
 						<a href="#contact" className="btn-grad-talk">
 							Let's Talk
