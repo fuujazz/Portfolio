@@ -23,26 +23,21 @@ const Experience = () => {
 	return (
 		<motion.section
 			id="experience"
-			initial={{ opacity: 0 }}
-			whileInView={{
-				opacity: 1,
-				transition: {
-					type: "spring",
-					bounce: 0.4,
-					duration: 3,
-				},
-			}}
+			initial="hidden"
+			variants={container}
+			whileInView="show"
 			viewport={{ once: true }}
 		>
 			<h5>What Skills I Have</h5>
 			<h2>My Experience</h2>
 
-			<div className="container experience__container">
+			<motion.div className="container experience__container" variants={item}>
 				<motion.div
 					className="experience__frontend"
 					variants={container}
 					initial="hidden"
-					animate="show"
+					whileInView="show"
+					viewport={{ once: true }}
 				>
 					<h3>Frontend Development</h3>
 					<div className="experience__content">
@@ -116,7 +111,8 @@ const Experience = () => {
 					className="experience__backend"
 					variants={container}
 					initial="hidden"
-					animate="show"
+					whileInView="show"
+					viewport={{ once: true }}
 				>
 					<h3>Backend Development</h3>
 					<div className="experience__content">
@@ -182,7 +178,8 @@ const Experience = () => {
 					className="experience__soft"
 					variants={container}
 					initial="hidden"
-					animate="show"
+					whileInView="show"
+					viewport={{ once: true }}
 				>
 					<h3>Soft Skills</h3>
 					<div className="experience__content">
@@ -228,7 +225,8 @@ const Experience = () => {
 					className="experience__others"
 					variants={container}
 					initial="hidden"
-					animate="show"
+					whileInView="show"
+					viewport={{ once: true }}
 				>
 					<h3>Others</h3>
 					<div className="experience__content">
@@ -297,7 +295,7 @@ const Experience = () => {
 						</motion.article>
 					</div>
 				</motion.div>
-			</div>
+			</motion.div>
 		</motion.section>
 	);
 };

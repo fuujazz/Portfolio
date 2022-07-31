@@ -28,7 +28,7 @@ const containerP = {
 		opacity: 1,
 		transition: {
 			when: "beforeChildren",
-			staggerChildren: 0.02,
+			staggerChildren: 0.01,
 		},
 	},
 };
@@ -62,7 +62,8 @@ const About = () => {
 				className="container about__container"
 				variants={container}
 				initial="hidden"
-				animate="show"
+				whileInView="show"
+				viewport={{ once: true }}
 			>
 				<motion.div className="about__me" variants={item}>
 					<img src={ME} alt="" className="about__me-image " />
@@ -102,8 +103,9 @@ const About = () => {
 					<motion.div
 						variants={containerP}
 						initial="hidden"
-						animate="show"
+						whileInView="show"
 						id="paragraph__div"
+						viewport={{ once: true }}
 					>
 						{letter.map((letter, index) => (
 							<motion.span key={index} variants={itemP}>

@@ -1,3 +1,7 @@
+#about {
+	height: 120vh;
+}
+
 .about__container {
 	display: grid;
 	grid-template-columns: 35% 50%;
@@ -111,11 +115,12 @@
 	position: absolute;
 	width: 8rem;
 	left: 0;
-	top: 11rem;
+	top: 35%;
 }
 .arrow_icon {
 	display: none;
 	transform: rotate(45deg);
+	z-index: 5;
 }
 
 .about__me:hover .arrow_icon {
