@@ -28,9 +28,16 @@
 
 #about__title > h2 {
 	color: rgb(241, 106, 235);
+	margin-bottom: 2rem;
 }
 
 #about__title > h5 {
+	color: var(--color-light);
+}
+
+#paragraph__div {
+	text-align: center;
+	margin: 2rem 0;
 	color: var(--color-light);
 }
 
@@ -104,7 +111,7 @@
 	position: absolute;
 	width: 8rem;
 	left: 0;
-	top: 9rem;
+	top: 11rem;
 }
 .arrow_icon {
 	display: none;

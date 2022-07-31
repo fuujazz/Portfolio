@@ -62,7 +62,7 @@ h1 {
 
 section {
 	margin-top: 8rem;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 section > h2,
@@ -144,6 +144,16 @@ img {
 	display: block;
 	width: 100%;
 	object-fit: cover;
+}
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: var(--color-primary);
+	transform-origin: 0%;
+	z-index: 5;
 }
 
 /* Media Queries */
