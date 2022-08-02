@@ -13,7 +13,7 @@ const Nav = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const handleScroll = () => {
 		const position = window.pageYOffset;
-		console.log(position);
+
 		setScrollPosition(position);
 	};
 
