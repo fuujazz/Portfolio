@@ -86,7 +86,7 @@ const About = () => {
 						<motion.article className="about__card" variants={item}>
 							<FaAward className="about__icon" />
 							<h5>Experience</h5>
-							<small>1 year experience</small>
+							<small>1 year experience as a freelancer</small>
 						</motion.article>
 						<motion.article className="about__card" variants={item}>
 							<FiUsers className="about__icon" />
