@@ -25,13 +25,16 @@ const Footer = () => {
 			</ul>
 
 			<div className="footer__socials">
-				<a href="https://www.instagram.com/kaganercelik/">
+				<a href="https://www.instagram.com/kaganercelik/" target="_blank">
 					<BsInstagram size="36px" />
 				</a>
-				<a href="https://twitter.com/fuufumee">
+				<a href="https://twitter.com/fuufumee" target="_blank">
 					<TbBrandTwitter size="36px" />
 				</a>
-				<a href="https://www.linkedin.com/in/yusuf-ka%C4%9Fan-er%C3%A7elik-8027b976/">
+				<a
+					href="https://www.linkedin.com/in/yusuf-ka%C4%9Fan-er%C3%A7elik-8027b976/"
+					target="_blank"
+				>
 					<AiOutlineLinkedin size="36px" />
 				</a>
 			</div>
