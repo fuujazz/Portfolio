@@ -20,19 +20,12 @@ const Nav = () => {
 	const handleNavigate = () => {
 		if (scrollPosition >= 0 && scrollPosition < 200) {
 			setActiveNav("#");
-
-			navigate("/#");
 		} else if (scrollPosition > 200 && scrollPosition <= 1100) {
 			setActiveNav("#about");
-
-			navigate("/#about");
-		} else if (scrollPosition > 1100 && scrollPosition <= 2300) {
+		} else if (scrollPosition > 1100 && scrollPosition <= 3500) {
 			setActiveNav("#experience");
-
-			navigate("/#experience");
 		} else {
 			setActiveNav("#contact");
-			navigate("/#contact");
 		}
 	};
 
