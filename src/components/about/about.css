@@ -129,9 +129,9 @@
 	animation: hideshow 10s ease-out forwards;
 }
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
 	.about__container {
-		display: block;
+		grid-template-columns: 1 fr;
 		gap: 0;
 	}
 
@@ -146,6 +146,11 @@
 
 	.arrow_container {
 		top: 0;
+	}
+
+	.arrow_container {
+		left: -15rem;
+		top: -0.4rem;
 	}
 }
 
@@ -167,5 +172,9 @@
 	.about__content p {
 		margin: 1.5rem 0;
 		width: 25rem;
+	}
+	.arrow_container {
+		left: -20rem;
+		top: -1rem;
 	}
 }

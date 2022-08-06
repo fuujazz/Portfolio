@@ -1,7 +1,6 @@
 header {
 	height: 100vh;
 	padding-top: 7rem;
-	overflow: hidden;
 }
 
 .header__container {
@@ -65,15 +64,28 @@ header {
 
 /* MEDIA QUERIS */
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
 	header {
 		height: 68vh;
+	}
+
+	.header__container {
+		position: absolute;
+	}
+
+	.header__socials {
+		left: 1rem;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	header {
 		height: 100vh;
+		position: relative;
+	}
+	.header__container {
+		position: absolute;
+		left: 50%;
 	}
 
 	.header__socials,

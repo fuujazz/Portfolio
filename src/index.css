@@ -158,7 +158,7 @@ img {
 
 /* Media Queries */
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
 	.container {
 		width: var(--container-md);
 	}

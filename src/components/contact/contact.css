@@ -63,23 +63,33 @@ button {
 	align-self: center;
 }
 
-@media screen and (max-width: 1024) {
-	section#contact {
-		width: 80%;
-	}
-
-	.contact__container {
+@media screen and (max-width: 1024px) {
+	.container.contact__container {
 		grid-template-columns: 1fr;
 		gap: 2rem;
+	}
+
+	.container.contact__container {
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.contact__option-icon {
-		width: min-content;
-	}
-	.contact__container {
+	.container.contact__container {
 		grid-template-columns: 1fr;
 		width: var(--container-width-sm);
+	}
+	.container.contact__container {
+		width: 87vh;
+	}
+	.contact__option {
+		min-width: fit-content;
+	}
+
+	#contact__h5 {
+		margin-left: 75%;
+	}
+	#contact__h2 {
+		margin-left: 75%;
 	}
 }

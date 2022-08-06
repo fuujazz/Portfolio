@@ -51,3 +51,32 @@ footer a {
 	margin-bottom: 4rem;
 	color: var(--color-bg);
 }
+
+@media screen and (max-width: 1024px) {
+	.permalinks {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.footer__socials {
+		margin-bottom: 2.6rem;
+	}
+
+	footer {
+		width: 100vh;
+	}
+}
+@media screen and (max-width: 768px) {
+	.permalinks {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.footer__socials {
+		margin-bottom: 2.6rem;
+	}
+
+	footer {
+		width: 87vh;
+	}
+}

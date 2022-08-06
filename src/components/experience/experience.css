@@ -55,7 +55,7 @@
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
 	.experience__container {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -73,6 +73,10 @@
 	.experience__container {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	#experience {
+		width: 87vh;
 	}
 	.experience__content {
 		display: grid;
