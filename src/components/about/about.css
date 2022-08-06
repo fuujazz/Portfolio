@@ -155,6 +155,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	#about {
+		margin-top: 10rem;
+	}
 	.about__me {
 		width: 65%;
 		margin: 0 auto 3rem;
