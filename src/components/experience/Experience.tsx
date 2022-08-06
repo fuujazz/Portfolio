@@ -28,7 +28,7 @@ const Experience = () => {
 			whileInView="show"
 			viewport={{ once: true }}
 		>
-			<h5>What Skills I Have</h5>
+			<h5>What Skills Do I Have</h5>
 			<h2>My Experience</h2>
 
 			<motion.div className="container experience__container" variants={item}>
